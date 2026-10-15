@@ -74,6 +74,128 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #dce3e9;
+}
+
+.participants-heading {
+  margin-bottom: 6px;
+  color: #43505e;
+  font-size: 0.9rem;
+}
+
+.participant-list {
+  padding-left: 0;
+  color: #4b5563;
+  list-style: none;
+}
+
+.participant-list li {
+  padding: 2px 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-list .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: grid;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  padding: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #b42318;
+}
+
+.remove-participant:hover {
+  background-color: #fee4e2;
+}
+
+.remove-participant:focus-visible {
+  outline: 2px solid #b42318;
+  outline-offset: 2px;
+}
+
+.remove-participant:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.trash-icon {
+  position: relative;
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin-top: 3px;
+  border: 1.5px solid currentColor;
+  border-top: 0;
+  border-radius: 0 0 2px 2px;
+}
+
+.trash-icon::before,
+.trash-icon::after {
+  position: absolute;
+  content: "";
+  background: currentColor;
+}
+
+.trash-icon::before {
+  top: -3px;
+  left: -3px;
+  width: 14px;
+  height: 1.5px;
+}
+
+.trash-icon::after {
+  top: -6px;
+  left: 2px;
+  width: 4px;
+  height: 2px;
+  border: 1.5px solid currentColor;
+  border-bottom: 0;
+  border-radius: 2px 2px 0 0;
+  background: transparent;
+}
+
+.trash-icon span::before,
+.trash-icon span::after {
+  position: absolute;
+  top: 2px;
+  width: 1px;
+  height: 5px;
+  content: "";
+  background: currentColor;
+}
+
+.trash-icon span::before {
+  left: 3px;
+}
+
+.trash-icon span::after {
+  right: 3px;
+}
+
+.participant-list .participant-list-empty {
+  margin-left: 0;
+  color: #737b84;
+  font-style: italic;
+  list-style: none;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
